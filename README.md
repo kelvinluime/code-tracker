@@ -5,7 +5,7 @@ This is a notetaking app for anyone who is studying computer science. This app c
 To be continued 
 
 # Features 
-[ ] Search field allows user to search for algorithms (not implemented yet) 
-[ ] Save algorithm
-[ ] Edit algorithm in a customized text editor 
-[ ] To be continued 
+- Search field allows user to search for algorithms (not implemented yet) 
+- Save algorithm
+- Edit algorithm in a customized text editor 
+- To be continued 
