@@ -23,14 +23,14 @@
                <menus>
                   <Menu mnemonicParsing="false" text="File">
                      <items>
-                        <MenuItem fx:id="saveButton" mnemonicParsing="false" onAction="#onSave" text="Save" />
+                        <MenuItem mnemonicParsing="false" onAction="#onSave" text="Save" />
                         <MenuItem mnemonicParsing="false" onAction="#onLoad" text="Load" />
                         <MenuItem mnemonicParsing="false" onAction="#onClose" text="Close" />
                      </items>
                   </Menu>
                </menus>
             </MenuBar>
-            <Region fx:id="topRegion" prefHeight="2.0" prefWidth="1270.0" />
+            <Region prefHeight="2.0" prefWidth="1270.0" />
          </children>
       </VBox>
    </top>

@@ -2,15 +2,12 @@ package com.kinmanlui.scene.editor;
 
 import com.kinmanlui.database.TestBase;
 import com.kinmanlui.main.Main;
-import com.kinmanlui.main.Resource;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import com.kinmanlui.res.Resource;
+import com.kinmanlui.structures.algorithm.Test;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -26,10 +23,10 @@ import java.util.concurrent.LinkedBlockingDeque;
 public class EditorController implements Initializable{
 
     @FXML private TextArea textArea;
-    @FXML private Button saveButton;
 
     private TestBase testBase;
     private TextFile currentTextFile;
+    private Test test;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -38,7 +35,7 @@ public class EditorController implements Initializable{
         lines.add("// Created on " + today);
         lines.add(Resource.PACKAGE_STATEMENT);
         lines.add("");
-        lines.add("public class [YOUR_CLASS_NAME_HERE] implements Runnable {");
+        lines.add("public class YOUR_CLASS_NAME_HERE implements Runnable {");
         lines.add("    @Override");
         lines.add("    public void run() {");
         lines.add("        // YOUR CODE HERE");
@@ -48,17 +45,25 @@ public class EditorController implements Initializable{
         lines.forEach(line -> textArea.appendText(line + "\n"));
 
         testBase = TestBase.INSTANCE;
+        test = null;
+    }
 
+    public void edit(Test test) {
+        textArea.clear();
+        textArea.setText(test.getContent());
+        this.test = test;
     }
 
     @FXML
     private void onLoad() {
-
         throw new UnsupportedOperationException("Function has not been implemented.");
     }
 
     @FXML
     private void onSave() throws IOException{
+
+        // TODO: 11/9/17 Save differently if the user is just editing a file
+
         List<String> lines = new LinkedList<>();
         boolean classNameFound = false;
         boolean isClassName = false;
@@ -77,7 +82,7 @@ public class EditorController implements Initializable{
         testName = testNameController.getTestName();
 
         // TODO: 10/20/17 Think of a safer approach to get class name
-        // Store all the lines from the text area into a list while finding the class name for creating a new file
+        // Store all the text from the text area into a list while finding the class name for creating a new file
         if(testName != null) {
             for (String line : textArea.getText().split("\\n")) {
                 lines.add(line);

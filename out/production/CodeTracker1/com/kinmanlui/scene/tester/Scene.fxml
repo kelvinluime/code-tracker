@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10.0" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kinmanlui.scene.tester.TestController">
+    <children>
+        <HBox>
+            <children>
+                <Label text="Select test to perform:" textFill="#eeeeee"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0" VBox.vgrow="ALWAYS">
+            <children>
+                <ListView fx:id="list" onKeyPressed="#keyPressed" />
+                <TextArea fx:id="textArea" editable="false" promptText="Please select a test " HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+        <HBox alignment="TOP_RIGHT" spacing="10.0">
+            <children>
+                <Button onMousePressed="#addOnMousePressed" mnemonicParsing="false" text="+" />
+                <Button onMousePressed="#removeOnMousePressed" mnemonicParsing="false" text="-" />
+                <Button onMousePressed="#editOnMousePressed" mnemonicParsing="false" text="Edit" />
+                <Region prefHeight="38.0" prefWidth="548.0" HBox.hgrow="ALWAYS" />
+                <Button layoutX="711.0" layoutY="10.0" minWidth="100.0" mnemonicParsing="false" onMousePressed="#runOnMousePressed" prefWidth="100.0" text="Run" />
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

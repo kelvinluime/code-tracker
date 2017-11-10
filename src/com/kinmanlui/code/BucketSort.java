@@ -4,7 +4,7 @@
  */
 package com.kinmanlui.code;
 
-import com.kinmanlui.main.Resource;
+import com.kinmanlui.res.Resource;
 
 public class BucketSort implements Runnable {
 

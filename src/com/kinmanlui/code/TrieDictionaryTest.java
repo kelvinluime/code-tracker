@@ -7,8 +7,8 @@
 
 package com.kinmanlui.code;
 
-import com.kinmanlui.main.Resource;
-import com.kinmanlui.structures.Trie;
+import com.kinmanlui.res.Resource;
+import com.kinmanlui.structures.data.Trie;
 
 import java.util.Scanner;
 

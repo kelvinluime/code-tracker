@@ -3,8 +3,11 @@
  */
 package com.kinmanlui.scene.tester;
 
-import com.kinmanlui.main.Test;
-import com.kinmanlui.main.Tester;
+import com.kinmanlui.database.TestBase;
+import com.kinmanlui.res.Resource;
+import com.kinmanlui.structures.algorithm.Test;
+import com.kinmanlui.structures.algorithm.Tester;
+import com.kinmanlui.scene.editor.EditorController;
 import javafx.beans.property.ListProperty;
 import javafx.beans.property.SimpleListProperty;
 import javafx.collections.FXCollections;
@@ -22,6 +25,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.ResourceBundle;
@@ -33,12 +38,14 @@ public class TestController implements Initializable{
     private Tester tester;
     private HashMap<String, Test> testMap;
     private ListProperty<String> listProperty;
+    private TestBase testBase;
 
     // TODO: 10/16/17 Create a text field which allows users to search tester names
 
     @Override
     @SuppressWarnings("unchecked")
     public void initialize(URL location, ResourceBundle resources) {
+        testBase = TestBase.INSTANCE;
 
         // testing
         System.out.println("Tester is loaded.");
@@ -50,20 +57,17 @@ public class TestController implements Initializable{
         // TODO: 10/30/17 Bind map keys with list view so that list view can update automatically when insertion occurs
         listProperty.set(FXCollections.observableList(new ArrayList<>(testMap.keySet())));
 
+        // Update text area based on the selected item in the list view
         list.itemsProperty().bindBidirectional(listProperty);
         list.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         list.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
-            textArea.setText(testMap.get(newValue).getSourceCode());
+            textArea.setText(testMap.get(newValue).getContent());
         });
         list.getSelectionModel().select(0);
 
         // For unknown reasons, this style does not work on css, so I put it in the controller
         textArea.setStyle("-fx-focus-color: transparent; -fx-text-box-border: transparent;");
         textArea.setFocusTraversable(false);
-    }
-
-    public void reload() {
-
     }
 
     @FXML
@@ -82,19 +86,44 @@ public class TestController implements Initializable{
 
     @FXML
     private void editOnMousePressed() {
-        throw new UnsupportedOperationException();
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../editor/EditorScene.fxml"));
+            EditorController controller = loader.getController();
+            String testName = (String) list.getSelectionModel().getSelectedItem();
+            Test test = testMap.get(testName);
+            controller.edit(test);
+            Stage window = new Stage();
+            window.setResizable(false);
+            window.initModality(Modality.WINDOW_MODAL);
+            window.setScene(new Scene(loader.load()));
+            window.showAndWait();
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+        }
     }
 
     @FXML
     private void removeOnMousePressed() {
-        throw new UnsupportedOperationException();
+        // TODO: 11/8/17 Reload main scene after deleting
+
+        // Delete the physical file
+        String testName = (String) list.getSelectionModel().getSelectedItem();
+        String className = testMap.get(testName).getClassName();
+        try {
+            Files.delete(Paths.get(Resource.CODE_PATH + className + ".java"));
+        } catch (IOException e) {
+            System.err.println("Unable to delete file: " + e.getMessage());
+        }
+
+        // Delete the line associating with the file in the database
+        testBase.remove(className);
     }
 
     @FXML
     private void runOnMousePressed() {
-        String test = (String) list.getSelectionModel().getSelectedItem();
-        if (test != null) {
-            tester.execute(testMap.get(test).getTestThread());
+        String testName = (String) list.getSelectionModel().getSelectedItem();
+        if (testName != null) {
+            tester.execute(testMap.get(testName).getTestThread());
         }
     }
 

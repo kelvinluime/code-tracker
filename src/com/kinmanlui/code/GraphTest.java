@@ -1,6 +1,6 @@
 package com.kinmanlui.code;
 
-import com.kinmanlui.structures.Graph;
+import com.kinmanlui.structures.data.Graph;
 
 import java.util.Stack;
 

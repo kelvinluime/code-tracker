@@ -1,7 +1,7 @@
 package com.kinmanlui.database;
 
-import com.kinmanlui.main.Resource;
-import com.kinmanlui.main.Test;
+import com.kinmanlui.res.Resource;
+import com.kinmanlui.structures.algorithm.Test;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -42,14 +42,14 @@ public enum TestBase {
         }
     }
 
-    public void remove(String testName) {
+    public void remove(String className) {
         connect();
-        String sql = "DELETE FROM tests WHERE TestName = ?";
+        String sql = "DELETE FROM tests WHERE ClassName = ?";
 
         try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
-            pstmt.setString(1, testName);
+            pstmt.setString(1, className);
             pstmt.executeUpdate();
-            System.out.println("Test " + testName + " has been removed.");
+            System.out.println("Test " + className + " has been removed.");
         } catch (SQLException e) {
             System.err.println(e.getMessage());
         }
@@ -71,7 +71,7 @@ public enum TestBase {
                         Constructor<?> cr = cs.getConstructor();
                         Runnable runnable = Runnable.class.cast(cr.newInstance());
 
-                        Test test = new Test(runnable, rs.getString("ClassName") + ".java", rs.getString("TestName"));
+                        Test test = new Test(runnable, rs.getString("ClassName"), rs.getString("TestName"));
                         list.add(test);
                     } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException| IllegalAccessException | InvocationTargetException e) {
                         System.err.println("Unable to get class: " + e.getMessage());
