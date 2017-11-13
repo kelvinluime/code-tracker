@@ -26,7 +26,6 @@ public class EditorController implements Initializable{
 
     private TestBase testBase;
     private TextFile currentTextFile;
-    private Test test;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -45,13 +44,11 @@ public class EditorController implements Initializable{
         lines.forEach(line -> textArea.appendText(line + "\n"));
 
         testBase = TestBase.INSTANCE;
-        test = null;
     }
 
     public void edit(Test test) {
         textArea.clear();
         textArea.setText(test.getContent());
-        this.test = test;
     }
 
     @FXML
@@ -61,9 +58,6 @@ public class EditorController implements Initializable{
 
     @FXML
     private void onSave() throws IOException{
-
-        // TODO: 11/9/17 Save differently if the user is just editing a file
-
         List<String> lines = new LinkedList<>();
         boolean classNameFound = false;
         boolean isClassName = false;
@@ -123,9 +117,8 @@ public class EditorController implements Initializable{
 
                 loader = new FXMLLoader(getClass().getResource("../tester/Scene.fxml"));
                 Main.window.setScene(new Scene(loader.load()));
-
-                onClose();
             }
+            onClose();
         }
     }
 

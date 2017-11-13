@@ -87,15 +87,24 @@ public class TestController implements Initializable{
     @FXML
     private void editOnMousePressed() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../editor/EditorScene.fxml"));
+            // Avoid using static method FXMLLoader.load() because controller will not be initialized. Otherwise,
+            // it will throw null-pointer exception
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("../editor/EditorScene.fxml"));
+            Parent root = loader.load();    // load() method should only be specified once
+
             EditorController controller = loader.getController();
             String testName = (String) list.getSelectionModel().getSelectedItem();
             Test test = testMap.get(testName);
-            controller.edit(test);
+            try {
+                controller.edit(test);  // TODO: 11/11/17 Throws null-pointer exception
+            } catch (NullPointerException e) {
+                System.err.println(e.getMessage());
+            }
             Stage window = new Stage();
             window.setResizable(false);
             window.initModality(Modality.WINDOW_MODAL);
-            window.setScene(new Scene(loader.load()));
+            window.setScene(new Scene(root));
             window.showAndWait();
         } catch (IOException e) {
             System.err.println(e.getMessage());

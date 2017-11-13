@@ -14,13 +14,20 @@ public class AlertBoxController {
     private void noOnKeyPressed() {
         respond = false;
         Stage.class.cast(wrapper.getScene().getWindow()).close();
+        onClose();
     }
 
     @FXML
     private void yesOnKeyPressed() {
         respond = true;
         Stage.class.cast(wrapper.getScene().getWindow()).close();
+        onClose();
     }
 
     boolean getRespond() { return respond; }
+
+    private void onClose() {
+        Stage window = Stage.class.cast(wrapper.getScene().getWindow());
+        window.close();
+    }
 }
