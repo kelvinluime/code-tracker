@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a530f839-efd7-4d80-8731-ad78d29ce97b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kinmanlui/database/tests.db" afterPath="$PROJECT_DIR$/src/com/kinmanlui/database/tests.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kinmanlui/scene/editor/AlertBoxController.java" afterPath="$PROJECT_DIR$/src/com/kinmanlui/scene/editor/AlertBoxController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kinmanlui/scene/editor/EditorController.java" afterPath="$PROJECT_DIR$/src/com/kinmanlui/scene/editor/EditorController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kinmanlui/scene/tester/TestController.java" afterPath="$PROJECT_DIR$/src/com/kinmanlui/scene/tester/TestController.java" />
-    </list>
+    <list default="true" id="a530f839-efd7-4d80-8731-ad78d29ce97b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,8 +64,8 @@
       <file leaf-file-name="EditorController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/kinmanlui/scene/editor/EditorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="43">
+              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,10 +176,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="44" />
     <option name="y" value="22" />
-    <option name="width" value="1396" />
+    <option name="width" value="698" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -453,12 +447,12 @@
       <workItem from="1510116206075" duration="172000" />
       <workItem from="1510116381973" duration="2000" />
       <workItem from="1510284215509" duration="7063000" />
-      <workItem from="1510444730309" duration="3043000" />
+      <workItem from="1510444730309" duration="3208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12635000" />
+    <option name="totallyTimeSpent" value="12800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="22" width="1396" height="878" extended-state="6" />
@@ -911,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kinmanlui/scene/editor/EditorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        <state relative-caret-position="43">
+          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

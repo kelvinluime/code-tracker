@@ -4,6 +4,7 @@ This is a notetaking app for anyone who is studying computer science. This app c
 # Screenshots 
 <img src="docs/code-tracker-main" />
 <img src="docs/code-tracker-editor" />
+<img src="docs/code-tracker-testname.png" />
 
 # Features 
 - Search field allows user to search for algorithms (not implemented yet) 
