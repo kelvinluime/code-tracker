@@ -15,4 +15,6 @@ Have you ever forgetten about an algorithm that you have implemented in a projec
 # Build 
 To be continued 
 
-> Thanks for reading! :raised_hands:
+
+
+__Thanks for reading! :raised_hands:__
