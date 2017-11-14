@@ -8,6 +8,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextArea;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -63,6 +65,7 @@ public class EditorController implements Initializable{
         boolean isClassName = false;
         String className = null;
         String testName;
+        Optional<ButtonType> result = null;
 
         // Output a window to ask for the test name
         Stage testNameStage = new Stage();
@@ -94,34 +97,25 @@ public class EditorController implements Initializable{
             }
             currentTextFile = new TextFile(Paths.get(Resource.CODE_PATH + className + ".java"), lines);
 
-            // Check if the file already exists
             if(new File(Resource.CODE_PATH + className + ".java").exists()) {
-                Stage stage = new Stage();
-                loader = new FXMLLoader(getClass().getResource("AlertBox.fxml"));
-                stage.initModality(Modality.APPLICATION_MODAL);
-                stage.setResizable(false);
-                stage.setScene(new Scene(loader.load()));
-                stage.showAndWait();
-
-                // If a same class file already exists, asks the user whether to replace it
-                // TODO: 10/30/17 Does not respond
-                AlertBoxController alertBoxController = loader.getController();
-                if(alertBoxController.getRespond()) {   // Replace file when the respond is true
+                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                alert.setHeaderText("Warning");
+                alert.setTitle("");
+                alert.setContentText("A file with the same class name already exists. Do you want to replace it?");
+                result = alert.showAndWait();
+                if(result.isPresent() && result.get() == ButtonType.OK) {
                     Files.delete(Paths.get(Resource.CODE_PATH + className + ".java"));
-                    Files.write(currentTextFile.getFile().toAbsolutePath(), currentTextFile.getContent());
+                } else {
+                    return; // If user does not wish to replace the original file, go back to editor scene
                 }
-            } else {
-                testBase.insert(className, testName);
-                Files.write(currentTextFile.getFile().toAbsolutePath(), currentTextFile.getContent());
-                // TODO: 10/30/17 Reload test page when a new test is added
-
-                loader = new FXMLLoader(getClass().getResource("../tester/Scene.fxml"));
-                Main.window.setScene(new Scene(loader.load()));
             }
-            onClose();
+
         }
     }
 
+    /**
+     * Close the window after save successfully or exit.
+     */
     @FXML
     private void onClose() {
         Stage.class.cast(textArea.getScene().getWindow()).close();
