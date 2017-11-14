@@ -1,18 +1,20 @@
 # What is it?
-This is a notetaking app for anyone who is studying computer science. This app could save algorithms that you have learned and run them in the app and see the output. 
+Have you ever forgetten about an algorithm that you have implemented in a project a long time ago? This is a notetaking app for anyone who is studying computer science. This app could save algorithms that you have learned and run them in the app and see the output. 
 
 # Screenshots 
-<<<<<<< HEAD
-<img src="docs/code-tracker-main" />
-<img src="docs/code-tracker-editor" />
-<img src="docs/code-tracker-testname.png" />
-=======
 <img src="docs/code-tracker-main.png" />
 <img src="docs/code-tracker-editor.png" />
->>>>>>> b1055a9f2225190b96cccb506a26c512671784f4
+<img src="docs/code-tracker-testname.png" />
 
 # Features 
 - Search field allows user to search for algorithms (not implemented yet) 
 - Save algorithm
 - Edit algorithm in a customized text editor 
 - To be continued 
+
+# Build 
+To be continued 
+
+
+
+__Thanks for reading! :raised_hands:__
