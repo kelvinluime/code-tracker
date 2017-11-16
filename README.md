@@ -5,6 +5,7 @@ Have you ever forgetten about an com.kinmanlui.user that you have implemented in
 <img src="docs/code-tracker-main.png" />
 <img src="docs/code-tracker-editor.png" />
 <img src="docs/code-tracker-testname.png" />
+<img src="docs/code-tracker-replace.png" />
 
 # Features 
 - Search field allows com.kinmanlui.user to search for algorithms (not implemented yet) 

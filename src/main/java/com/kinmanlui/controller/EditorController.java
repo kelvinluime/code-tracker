@@ -76,7 +76,6 @@ public class EditorController implements Initializable{
         TestNameController testNameController = loader.getController();
         testName = testNameController.getTestName();
 
-        // TODO: 10/20/17 Think of a safer approach to get class name
         // Store all the text from the text area into a list while finding the class name for creating a new file
         if(testName != null) {
             for (String line : textArea.getText().split("\\n")) {
@@ -87,7 +86,7 @@ public class EditorController implements Initializable{
                     String currentWord = q.remove();
                     if (isClassName) {
                         classNameFound = true;
-                        className = currentWord;
+                        className = currentWord;    // TODO: 11/16/17 Find a more secure way to get class name
                     } else if (currentWord.equals("class")) { // Find class name after first occurrence of "class"
                         isClassName = true;
                     }
@@ -95,6 +94,7 @@ public class EditorController implements Initializable{
             }
             currentTextFile = new TextFile(Paths.get(Resource.ALGORITHM_PATH + className + ".java"), lines);
 
+            // Handle
             if(new File(Resource.ALGORITHM_PATH + className + ".java").exists()) {
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
                 alert.setHeaderText("Warning");
@@ -103,11 +103,14 @@ public class EditorController implements Initializable{
                 result = alert.showAndWait();
                 if(result.isPresent() && result.get() == ButtonType.OK) {
                     Files.delete(Paths.get(Resource.ALGORITHM_PATH + className + ".java"));
+                    Files.write(Paths.get(Resource.ALGORITHM_PATH + className + ".java"), lines);
                 } else {
-                    return; // If com.kinmanlui.user does not wish to replace the original file, go back to editor scene
+                    return; // If user does not wish to replace the original file, go back to editor scene
                 }
             }
 
+            Files.write(Paths.get(Resource.ALGORITHM_PATH + className + ".java"), lines);
+            onClose();
         }
     }
 

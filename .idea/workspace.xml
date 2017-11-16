@@ -7,90 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a530f839-efd7-4d80-8731-ad78d29ce97b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_20_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/code/BinarySort.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/code/BubbleSort.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/code/BucketSort.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/code/GraphTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/code/InsertionSort.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/code/MergeSort.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/code/QuickSort.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/code/RadixSort.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/code/TrieDictionaryTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/database/TestBase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/database/tests.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/driver/sqlite-jdbc-3.20.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/main/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/res/Resource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/res/random-numbers.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/res/words.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/scene/editor/EditorController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/scene/editor/EditorScene.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/scene/editor/Stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/scene/editor/TestNameController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/scene/editor/TestNameScene.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/scene/editor/TextFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/scene/tester/Scene.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/scene/tester/Stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/scene/tester/TestController$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/scene/tester/TestController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/structures/algorithm/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/structures/algorithm/Tester.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/structures/data/BinaryTree$BinaryNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/structures/data/BinaryTree.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/structures/data/Graph.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/structures/data/Trie$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/structures/data/Trie$TrieNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/structures/data/Trie.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/structures/data/Vertex$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/structures/data/Vertex$Edge.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/structures/data/Vertex$NeighborIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CodeTracker1/com/kinmanlui/structures/data/Vertex.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/driver/sqlite-jdbc-3.20.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/scene/editor/Stylesheet.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/code/BinarySort.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/BinarySort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/code/BubbleSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/BubbleSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/code/BucketSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/BucketSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/code/GraphTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/GraphTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/code/InsertionSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/InsertionSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/code/MergeSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/MergeSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/code/QuickSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/QuickSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/code/RadixSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/RadixSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/code/TrieDictionaryTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/TrieDictionaryTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/database/TestBase.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/TestBase.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/database/tests.db" afterPath="$PROJECT_DIR$/src/main/resources/com/kinmanlui/database/tests.db" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/start/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/res/Resource.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/info/Resource.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/res/random-numbers.txt" afterPath="$PROJECT_DIR$/src/main/resources/com/kinmanlui/misc/random-numbers.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/res/words.txt" afterPath="$PROJECT_DIR$/src/main/resources/com/kinmanlui/misc/words.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/scene/editor/EditorController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/EditorController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/scene/editor/EditorScene.fxml" afterPath="$PROJECT_DIR$/src/main/resources/com/kinmanlui/fxml/EditorScene.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/scene/editor/TestNameController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/TestNameController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/scene/editor/TestNameScene.fxml" afterPath="$PROJECT_DIR$/src/main/resources/com/kinmanlui/fxml/TestNameScene.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/scene/editor/TextFile.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/TextFile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/scene/tester/Scene.fxml" afterPath="$PROJECT_DIR$/src/main/resources/com/kinmanlui/fxml/Main.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/scene/tester/Stylesheet.css" afterPath="$PROJECT_DIR$/src/main/resources/com/kinmanlui/stylesheet/tester-style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/scene/tester/TestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/MainController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/structures/algorithm/Test.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/Test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/structures/algorithm/Tester.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/tester/Tester.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/structures/data/BinaryTree.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/BinaryTree.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/structures/data/Graph.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/Graph.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/structures/data/Trie.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/Trie.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/kinmanlui/structures/data/Vertex.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/Vertex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeTracker1.iml" afterPath="$PROJECT_DIR$/CodeTracker1.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CodeReview/com/kinmanlui/res/words.txt" afterPath="$PROJECT_DIR$/out/production/CodeReview/com/kinmanlui/res/words.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CodeReview/com/kinmanlui/scene/editor/AlertBox.fxml" afterPath="$PROJECT_DIR$/out/production/CodeReview/com/kinmanlui/scene/editor/AlertBox.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CodeReview/com/kinmanlui/scene/editor/EditorScene.fxml" afterPath="$PROJECT_DIR$/out/production/CodeReview/com/kinmanlui/scene/editor/EditorScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CodeReview/com/kinmanlui/scene/editor/TestNameScene.fxml" afterPath="$PROJECT_DIR$/out/production/CodeReview/com/kinmanlui/scene/editor/TestNameScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CodeReview/com/kinmanlui/scene/tester/Scene.fxml" afterPath="$PROJECT_DIR$/out/production/CodeReview/com/kinmanlui/scene/tester/Scene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CodeTracker/com/kinmanlui/resources/words.txt" afterPath="$PROJECT_DIR$/out/production/CodeTracker/com/kinmanlui/resources/words.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CodeTracker/com/kinmanlui/scene/editor/AlertBox.fxml" afterPath="$PROJECT_DIR$/out/production/CodeTracker/com/kinmanlui/scene/editor/AlertBox.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CodeTracker/com/kinmanlui/scene/editor/EditorScene.fxml" afterPath="$PROJECT_DIR$/out/production/CodeTracker/com/kinmanlui/scene/editor/EditorScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CodeTracker/com/kinmanlui/scene/editor/TestNameScene.fxml" afterPath="$PROJECT_DIR$/out/production/CodeTracker/com/kinmanlui/scene/editor/TestNameScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CodeTracker/com/kinmanlui/scene/tester/Scene.fxml" afterPath="$PROJECT_DIR$/out/production/CodeTracker/com/kinmanlui/scene/tester/Scene.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/EditorController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/EditorController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,18 +22,7 @@
     <SUITE FILE_PATH="coverage/CodeTracker$.coverage" NAME=" Coverage Results" MODIFIED="1510767127459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -143,7 +50,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/kinmanlui/scene/tester/TestController.java" />
         <option value="$PROJECT_DIR$/src/com/kinmanlui/scene/editor/AlertBoxController.java" />
         <option value="$PROJECT_DIR$/src/com/kinmanlui/scene/editor/EditorController.java" />
         <option value="$PROJECT_DIR$/src/com/kinmanlui/main/Main.java" />
@@ -192,8 +98,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/TestBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kinmanlui/info/Resource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/EditorController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/EditorController.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -288,6 +195,16 @@
               <item name="CodeTracker" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="kinmanlui" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CodeTracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeTracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -339,11 +256,11 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/src/main/resources/stylesheet" />
       <recent name="$PROJECT_DIR$/src/main/resources/database" />
       <recent name="$PROJECT_DIR$/src/main/resources/database/file" />
       <recent name="$PROJECT_DIR$/src/main/resources/database/driver" />
-      <recent name="$PROJECT_DIR$/src/main/resources/misc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -526,16 +443,15 @@
       <workItem from="1510284215509" duration="7063000" />
       <workItem from="1510444730309" duration="15099000" />
       <workItem from="1510771158470" duration="608000" />
-      <workItem from="1510808278826" duration="8164000" />
+      <workItem from="1510808278826" duration="10154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33463000" />
+    <option name="totallyTimeSpent" value="35453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="742" y="22" width="698" height="878" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -550,7 +466,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40114614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35959885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -610,17 +526,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_20_0.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -711,16 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/TestNameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -798,7 +693,7 @@
         <state relative-caret-position="180">
           <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -830,7 +725,7 @@
         <state relative-caret-position="186">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -843,17 +738,6 @@
         <state relative-caret-position="240">
           <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -870,7 +754,7 @@
         <state relative-caret-position="90">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -896,7 +780,7 @@
         <state relative-caret-position="164">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,7 +790,7 @@
         <state relative-caret-position="321">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -937,16 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/EditorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="65" column="18" lean-forward="false" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -966,7 +840,7 @@
         <state relative-caret-position="240">
           <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -989,10 +863,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+        <state relative-caret-position="240">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/EditorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="88" column="41" lean-forward="true" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/TestNameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/code-tracker-replace.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
