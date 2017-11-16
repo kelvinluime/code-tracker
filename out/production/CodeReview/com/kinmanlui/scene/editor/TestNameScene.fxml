@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox spacing="5.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kinmanlui.scene.editor.TestNameController">
+<VBox spacing="5.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.resources.controller.TestNameController">
    <children>
       <Label contentDisplay="TOP" prefHeight="17.0" prefWidth="340.0" text="Please enter the test name for this class:" />
       <TextField fx:id="textField" onKeyPressed="#onKeyPressed" />
