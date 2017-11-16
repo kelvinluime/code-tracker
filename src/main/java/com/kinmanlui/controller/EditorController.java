@@ -104,7 +104,7 @@ public class EditorController implements Initializable{
                 if(result.isPresent() && result.get() == ButtonType.OK) {
                     Files.delete(Paths.get(Resource.ALGORITHM_PATH + className + ".java"));
                 } else {
-                    return; // If com.kinmanlui.user does not wish to replace the original file, go back to editor scene
+                    return; // If does not wish to replace the original file, go back to editor scene
                 }
             }
 
