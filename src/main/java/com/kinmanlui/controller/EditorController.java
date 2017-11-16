@@ -105,7 +105,11 @@ public class EditorController implements Initializable{
                     Files.delete(Paths.get(Resource.ALGORITHM_PATH + className + ".java"));
                     Files.write(Paths.get(Resource.ALGORITHM_PATH + className + ".java"), lines);
                 } else {
+<<<<<<< HEAD
                     return; // If user does not wish to replace the original file, go back to editor scene
+=======
+                    return; // If does not wish to replace the original file, go back to editor scene
+>>>>>>> 58363744bc2b5e69252f8bdf5969ff30eb750579
                 }
             }
 
