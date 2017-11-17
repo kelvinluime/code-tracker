@@ -2,6 +2,7 @@ package com.kinmanlui.controller;
 
 import com.kinmanlui.structures.*;
 import com.kinmanlui.info.*;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -9,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -25,7 +27,6 @@ public class EditorController implements Initializable{
     @FXML private TextArea textArea;
 
     private TestBase testBase;
-    private TextFile currentTextFile;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -92,7 +93,6 @@ public class EditorController implements Initializable{
                     }
                 }
             }
-            currentTextFile = new TextFile(Paths.get(Resource.ALGORITHM_PATH + className + ".java"), lines);
 
             // Handle
             if(new File(Resource.ALGORITHM_PATH + className + ".java").exists()) {
@@ -104,16 +104,14 @@ public class EditorController implements Initializable{
                 if(result.isPresent() && result.get() == ButtonType.OK) {
                     Files.delete(Paths.get(Resource.ALGORITHM_PATH + className + ".java"));
                     Files.write(Paths.get(Resource.ALGORITHM_PATH + className + ".java"), lines);
+                    testBase.insert(className, testName);
                 } else {
-<<<<<<< HEAD
-                    return; // If user does not wish to replace the original file, go back to editor scene
-=======
                     return; // If does not wish to replace the original file, go back to editor scene
->>>>>>> 58363744bc2b5e69252f8bdf5969ff30eb750579
                 }
             }
 
             Files.write(Paths.get(Resource.ALGORITHM_PATH + className + ".java"), lines);
+            testBase.insert(className, testName);
             onClose();
         }
     }

@@ -1,10 +1,10 @@
 // Created on 2017-11-16
 package com.kinmanlui.user;
 
-public class HelloWorld implements Runnable {
+public class Hi implements Runnable {
     @Override
     public void run() {
         // YOUR CODE HERE
-	System.out.println("Hello World"); 
+	System.out.println("Hi"); 
     }
 }
