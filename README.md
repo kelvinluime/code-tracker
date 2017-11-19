@@ -14,8 +14,7 @@ Have you ever forgetten about an algorithm that you have implemented in a projec
 - To be continued 
 
 # Build 
-To be continued 
-
+To be continued.
 
 
 __Thanks for reading! :raised_hands:__
