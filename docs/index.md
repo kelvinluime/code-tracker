@@ -8,15 +8,6 @@ Have you ever forgetten about an algorithm that you have implemented in a projec
 <img src="docs/code-tracker-replace.png" />
 
 # Features 
-<<<<<<< HEAD
-- Search existing algorithms 
-- Save new algorithm
-- Edit existing algorithms 
-- To be continued 
-
-# Build 
-To be continued 
-=======
 - Search field allows com.kinmanlui.user to search for algorithms (not implemented yet) 
 - Save com.kinmanlui.user
 - Edit com.kinmanlui.user in a customized text editor 
@@ -24,5 +15,6 @@ To be continued
 
 # Build 
 To be continued.
+
 
 __Thanks for reading! :raised_hands:__
