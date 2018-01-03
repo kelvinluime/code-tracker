@@ -10,7 +10,6 @@ public class BucketSort implements Runnable {
 
     @Override
     public void run() {
-        Integer[] numbers = Resource.INSTANCE.getRandomNumbers();
 
 
 

@@ -7,7 +7,7 @@ public class BubbleSort implements Runnable {
     @Override
     public void run() {
 
-        Integer[] numbers = Resource.INSTANCE.getRandomNumbers();
+        int[] numbers = Resource.INSTANCE.getRandomNumbers();
 
         long start = System.currentTimeMillis();
         for(int i = 0; i < numbers.length - 1; i++) {

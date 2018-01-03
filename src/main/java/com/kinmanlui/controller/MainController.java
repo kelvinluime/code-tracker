@@ -1,11 +1,9 @@
-/**
- *
- */
 package com.kinmanlui.controller;
 
 import com.kinmanlui.info.Resource;
 import com.kinmanlui.structures.Test;
 import com.kinmanlui.structures.TestBase;
+import com.kinmanlui.structures.Trie;
 import com.kinmanlui.tester.Tester;
 import javafx.beans.property.ListProperty;
 import javafx.beans.property.SimpleListProperty;
@@ -18,6 +16,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -34,39 +33,64 @@ public class MainController implements Initializable{
 
     @FXML private ListView list;
     @FXML private TextArea textArea;
+    @FXML private TextField searchField;
     private Tester tester;
     private HashMap<String, Test> testMap;
     private ListProperty<String> listProperty;
     private TestBase testBase;
-
-    // TODO: 10/16/17 Create a text field which allows users to search com.kinmanlui.tester names
+    private Trie algorithmNameTrie;
 
     @Override
     @SuppressWarnings("unchecked")
     public void initialize(URL location, ResourceBundle resources) {
         testBase = TestBase.INSTANCE;
 
-        // testing
-        System.out.println("Tester is loaded.");
-
         tester = new Tester();
         testMap = tester.getTestMap();
-        listProperty = new SimpleListProperty<>();
+//        listProperty = new SimpleListProperty<>();
 
         // TODO: 10/30/17 Bind map keys with list view so that list view can update automatically when insertion occurs
-        listProperty.set(FXCollections.observableList(new ArrayList<>(testMap.keySet())));
+//        listProperty.set(FXCollections.observableList(new ArrayList<>(testMap.keySet())));
+//
+//        // Update text area based on the selected item in the list view
+//        list.itemsProperty().bindBidirectional(listProperty);
+//        list.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+//        list.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+//            textArea.setText(testMap.get(newValue).getContent());
+//        });
+//        list.getSelectionModel().select(0);
 
-        // Update text area based on the selected item in the list view
-        list.itemsProperty().bindBidirectional(listProperty);
-        list.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
-        list.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
-            textArea.setText(testMap.get(newValue).getContent());
+        bindListViewWithNewItems(new ArrayList<>(testMap.keySet()));
+
+        // Initializes the trie that stores all algorithm names
+        algorithmNameTrie = new Trie();
+        for(String algorithmName : testMap.keySet()) {
+            algorithmNameTrie.addWord(algorithmName);
+        }
+
+        // Binds search field with the list view (displays search result)
+        searchField.textProperty().addListener((observable, oldValue, newValue) -> {
+            System.out.println("\nSearch results: ");   // For debugging purposes
+            for(String algorithmName : algorithmNameTrie.getWords(newValue.toLowerCase())) {
+                System.out.println(algorithmName);
+            }
+            bindListViewWithNewItems(algorithmNameTrie.getWords(newValue.toLowerCase()));
         });
-        list.getSelectionModel().select(0);
 
-        // For unknown reasons, this style does not work on css, so I put it in the com.kinmanlui.controller
+        // For unknown reasons, this style does not work on css, so I put it in here
         textArea.setStyle("-fx-focus-color: transparent; -fx-text-box-border: transparent;");
         textArea.setFocusTraversable(false);
+    }
+
+    private void bindListViewWithNewItems(ArrayList<String> listItemStrings) {
+        ListProperty<String> listProperty = new SimpleListProperty<>();
+        listProperty.set(FXCollections.observableList(listItemStrings));
+        list.itemsProperty().bindBidirectional(listProperty);
+        list.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        list.getSelectionModel().selectedItemProperty().addListener(((observable, oldValue, newValue) -> {
+            textArea.setText(testMap.get(newValue).getContent());
+        }));
+        list.getSelectionModel().select(0);
     }
 
     @FXML

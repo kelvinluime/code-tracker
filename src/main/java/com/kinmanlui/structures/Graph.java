@@ -37,7 +37,7 @@ public class Graph<T> {
         for(Vertex<T> v : vertices.values()) {
             set = new HashSet<>();
             while(v.hasNeighbor()) {
-
+                // TODO: 12/6/17 Test if it has cycle
             }
         }
         return false;

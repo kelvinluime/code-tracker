@@ -70,7 +70,7 @@ public class Trie {
         // Get to the end of the prefix before looking for possible words
         for(int i = 0; i < prefix.length(); i++) {
             String subPrefix = prefix.substring(0, i + 1);
-            if(!current.children.containsKey(subPrefix)) {
+            if (!current.children.containsKey(subPrefix)) {
                 return words;   // Return empty ArrayList if there doesn't exist the prefix
             }
             current = current.children.get(subPrefix);

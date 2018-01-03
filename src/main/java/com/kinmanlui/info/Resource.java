@@ -15,18 +15,18 @@ public enum Resource {
     public static final String PACKAGE_STATEMENT = "package com.kinmanlui.user;";
     public static final String ALGORITHM_PATH_WITH_DOTS = "com.kinmanlui.user.";
     public static final String RESOURCE_PATH = "/com/kinmanlui/misc/";
-    private Integer[] randomNumbers = null;
+    private int[] randomNumbers = null;
 
     /**
      * Read the txt file with 1000 random numbers for sorting algorithms.
      * @return an integer array with 1000 random numbers
      */
-    public Integer[] getRandomNumbers() {
+    public int[] getRandomNumbers() {
         if(randomNumbers == null) {
             Scanner reader = null;
             List<Integer> numbers = new LinkedList<>();
             try {
-                reader = new Scanner(new BufferedReader(new FileReader(RESOURCE_PATH + "random-numbers.txt")));
+                reader = new Scanner(new BufferedReader(new FileReader(getClass().getResource("/com/kinmanlui/misc/random-numbers.txt").toString())));
                 while (reader.hasNext()) {
                     numbers.add(Integer.parseInt(reader.next()));
                 }
@@ -38,7 +38,7 @@ public enum Resource {
                 }
             }
 
-            randomNumbers = new Integer[numbers.size()];
+            randomNumbers = new int[numbers.size()];
             for (int i = 0; i < numbers.size(); i++) {
                 randomNumbers[i] = numbers.get(i);
             }
