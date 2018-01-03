@@ -7,28 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a530f839-efd7-4d80-8731-ad78d29ce97b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kinmanlui/stylesheet/tester-style.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/com/kinmanlui/stylesheet/tester-style.css" afterPath="$PROJECT_DIR$/src/main/resources/com/kinmanlui/stylesheet/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kinmanlui/controller/MainController$1.class" afterPath="$PROJECT_DIR$/target/classes/com/kinmanlui/controller/MainController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kinmanlui/controller/MainController.class" afterPath="$PROJECT_DIR$/target/classes/com/kinmanlui/controller/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kinmanlui/info/Resource.class" afterPath="$PROJECT_DIR$/target/classes/com/kinmanlui/info/Resource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kinmanlui/start/Main.class" afterPath="$PROJECT_DIR$/target/classes/com/kinmanlui/start/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kinmanlui/user/BubbleSort.class" afterPath="$PROJECT_DIR$/target/classes/com/kinmanlui/user/BubbleSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kinmanlui/user/BucketSort.class" afterPath="$PROJECT_DIR$/target/classes/com/kinmanlui/user/BucketSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kinmanlui/user/InsertionSort.class" afterPath="$PROJECT_DIR$/target/classes/com/kinmanlui/user/InsertionSort.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kinmanlui/info/Resource.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/info/Resource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kinmanlui/start/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/start/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/Graph.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/Graph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/Trie.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/structures/Trie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kinmanlui/tester/Tester.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/tester/Tester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/BubbleSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/BubbleSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/BucketSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/BucketSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/InsertionSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/kinmanlui/user/InsertionSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/kinmanlui/fxml/Main.fxml" afterPath="$PROJECT_DIR$/src/main/resources/com/kinmanlui/fxml/Main.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kinmanlui/fxml/Main.fxml" afterPath="$PROJECT_DIR$/target/classes/com/kinmanlui/fxml/Main.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -691,12 +670,12 @@
       <workItem from="1513058086990" duration="6659000" />
       <workItem from="1513268192667" duration="19000" />
       <workItem from="1513652328375" duration="181000" />
-      <workItem from="1514941215480" duration="6880000" />
+      <workItem from="1514941215480" duration="6982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62726000" />
+    <option name="totallyTimeSpent" value="62828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="22" width="1396" height="878" extended-state="6" />

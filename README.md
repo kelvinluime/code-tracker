@@ -8,7 +8,6 @@ Have you ever forgetten about an algorithm that you have implemented in a projec
 <img src="docs/code-tracker-replace.png" />
 
 # Features 
-<<<<<<< HEAD
 - Search existing algorithms 
 - Save new algorithm
 - Edit existing algorithms 
