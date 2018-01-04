@@ -38,8 +38,18 @@ public class Trie {
     }
 
     /**
+     * adds a set of words
+     * @param words the set of words
+     */
+    public void addAllWords(Set<String> words) {
+        for(String word : words) {
+            addWord(word);
+        }
+    }
+
+    /**
      * inserts word into the trie.
-     * @param word
+     * @param word is the string element to be added onto the trie
      */
     public void addWord(String word) {
         if(word.isEmpty()) throw new IllegalArgumentException("Empty string.");

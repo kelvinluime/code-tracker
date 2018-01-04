@@ -17,7 +17,7 @@ public final class Test {
 
     public Test(Runnable testThread, String className, String testName) {
         this.testThread = testThread;
-        this.testName = testName;
+        this.testName = testName.toLowerCase(); // All test names (algorithm names) are converted into lower case automatically
         this.className = className;
         try {
             content = new String(Files.readAllBytes(Paths.get(Resource.ALGORITHM_PATH + className + ".java")));
